@@ -1,0 +1,136 @@
+
+
+.thumbnail{
+  width: 100%;
+  
+}
+.thumbnail-container{
+  position:relative;
+ 
+}
+.video-time{
+  position:absolute;
+  color:white;
+  background-color: black;
+  bottom:12px;
+  right: 5px;
+  padding:4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius:3px;
+  border: none;
+}
+.video-grid{
+  
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  
+
+}
+@media(max-width:864px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(min-width:865px)and(max-width:1125){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width:1126px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .video-title{
+    font-size:16px;
+    line-height:24px;
+  }
+  .video-author,.video-status{
+    font-size: 14px;
+  }
+}
+
+.video-status-grid{
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 10px;
+}
+.profile-container{
+  position:relative;
+  display: inline-block;
+  max-height:40px;
+}
+.profile-container .tooltip{
+  position:absolute;
+  display:flex;
+  column-gap:8px;
+  flex-direction: row;
+  bottom:-80px;
+  opacity:0;
+  align-items: center;
+  pointer-events:none;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+  padding-top:12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition:opacity 0.15s;
+  white-space: nowrap;
+  background-color: white;
+  font-size: 12px;
+}
+.profile-tooltip-pic{
+  width:42px;
+  height:42px;
+  object-fit:cover;
+  border-radius:21px;
+  
+  }
+  .profile-container:hover .tooltip{
+    opacity:1;
+  }
+  .author-name-tooltip{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+.profile-pic{
+ width:36px;
+ height: 36px;
+ border-radius: 20px;
+ margin-top: 8px;
+ cursor:pointer;
+}
+
+.video-title{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  cursor:  pointer;
+  
+
+}
+.video-title-link{
+  text-decoration-line:none;
+  color:black;
+ 
+}
+.video-author-link{
+  text-decoration-line:none;
+  color:rgb(96, 96, 96);
+}
+.video-author,.video-status{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 4px;
+ 
+}
+.video-author{
+  cursor:pointer;
+}
