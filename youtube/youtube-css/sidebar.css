@@ -38,23 +38,17 @@
     top:55px;
     bottom:0;
     left:0;
-    max-width:500px;
-    padding-top: 6px;
+    width:240px;
+    padding-top: 13px;
     z-index:200;
-    display:flex;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 50px;
-    row-gap: 10px;
+   
+  
   }
   .sidebar-link{
     display:flex;
-    justify-content: left;
     align-items: center;
-    
-    flex-direction: row;
     cursor:pointer;
-    column-gap:20px;
+    padding:8px 24px;
     
   }
   .sidebar-link:hover{
@@ -62,16 +56,16 @@
   }
   .sidebar-link img{
     height:24px;
-    margin-bottom: 6px;
+    margin-right: 24px;
   }
   .sidebar-link div{
-    
+    font-family: Roboto,Arial;
     font-size: 10px;
   }
   .youtube-exercise{
   
    
-    padding-left: 200px;
+    padding-left: 268px;
     
   }
 
